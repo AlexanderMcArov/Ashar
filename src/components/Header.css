@@ -52,7 +52,6 @@ span{
 .calculate{
     width: 700px;
     background: white;
-    border: red 1px solid;
     padding: 0px;
 }
 .calculate__result{
