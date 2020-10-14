@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+span{
+    margin: 0px;
+    padding: 0px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.jcb{
+    display: flex;
+    justify-content: space-between;
+}
+.HeaderMainDiv {
+    background-color:rgba(29, 28, 28, 0.856) !important;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.HeaderNavbarBrand {
+    color: white !important;
+    align-items: center;
+}
+
+.HeaderLogo {
+    height: 80px;
+    width: 63px;
+    background-image: url(../assets/logo.png);
+    background-size: contain;
+}
+.HeaderNavlinks {
+    color: white !important;
+} 
+#basic-nav-dropdown {
+    color: white !important;
+} 
+
+.navbar{
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* background-color: rgba(29, 28, 28, 0.856); */
+}
+.nav{
+    justify-content: space-between;
+}
+.calculate{
+    width: 700px;
+    background: white;
+    border: red 1px solid;
+    padding: 0px;
+}
+.calculate__result{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.calculate__form{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.btn_calculate{
+    padding: 0px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    border: rgb(50, 240, 0) 2px solid;
+    border-radius: 10px;
+    background: #202020;
+    outline: none;
+}
+.currency{
+    color: red;
+}
+

@@ -1,0 +1,92 @@
+.HomeMainDiv{
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0 auto;
+    z-index: -1;
+    padding-top: 50px;
+}
+
+.HomeCarouselButtonFirst{
+    background-color: #47555ea2;
+    box-shadow: none;
+    width: 140px;
+}
+.HomeCarouselButtonFirst:hover{
+    background-color: #47555E !important;
+    border-color: #47555E;
+    box-shadow: none;
+}
+.HomeCarouselCommentFirst{
+    background-color: #47555ea2;
+    border-radius: 5px;
+    width: 140px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.HomeCarouselButtonSecond{
+    background-color: #464a5377 !important;
+    box-shadow: none;
+    width: 170px;
+}
+.HomeCarouselButtonSecond:hover{
+    background-color: #BA0103 !important;
+    border-color: #BA0103;
+    box-shadow: none;
+}
+.HomeCarouselCommentSecond{
+    background-color: #464a53cb;
+    border-radius: 5px;
+    width: 170px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.HomeCarouselButtonThird{
+    background-color: #35374680 !important;
+    box-shadow: none;
+}
+.HomeCarouselButtonThird:hover{
+    background-color: #353746 !important;
+    border-color: #353746;
+    box-shadow: none;
+}
+.HomeCarouselCommentThird{
+    background-color: #353746 !important;
+    border-radius: 5px;
+    width: 110px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.upperCards{
+    background-color: #9C9BA0 !important;
+    border-color: #9C9BA0 !important;
+}
+
+.HomeMainPagination{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.HomeMainPagination .pagination{
+    padding: 0;
+    margin: 0;
+}
+.HomePaginationLinks{
+    color: black;
+}
+
+.AboutUsMainDiv{
+    margin-top: 80px !important;
+}
+
+.MainProductDetailDiv{
+    margin: 90px !important;
+}
+
