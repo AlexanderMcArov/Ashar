@@ -4,7 +4,7 @@ import { Button, Modal } from 'reactstrap';
 function Calculator(props) {
   const { calculate, setCalculate } = props
   const [value, setValue] = useState('')
-  const [years, setYears] = useState('')
+  const [years, setYears] = useState('1')
 
   const personalPayment = 2000
   const [result, setResult] = useState({
@@ -16,7 +16,7 @@ function Calculator(props) {
   })
 
   function setGoodNumber(number) {
-    console.log(number);
+    console.log('NUMBER:',number);
     let float = parseFloat(number) - parseInt(number) + ' '
     float.split(' ')
     let res = []
@@ -35,7 +35,7 @@ function Calculator(props) {
     res = res.reverse().join('')
     resf = resf.join('')
     res += resf
-    console.log(res);
+    console.log('GOOGNUMBER',res);
     return res
   }
 
@@ -48,7 +48,7 @@ function Calculator(props) {
     data.fisrtPayment = val * 0.3
     data.incomePayment = val * 0.05
     data.summRecive = val - data.fisrtPayment
-    data.everyMonthPayment = 2000 + parseFloat(data.summRecive) / time
+    data.everyMonthPayment = 2000 + parseInt(data.summRecive) / time
     data.totalSummPayment = 2000 * time + val + parseFloat(data.incomePayment)
 
     data.fisrtPayment = setGoodNumber(data.fisrtPayment)
@@ -56,6 +56,7 @@ function Calculator(props) {
     data.summRecive = setGoodNumber(data.summRecive)
     data.everyMonthPayment = setGoodNumber(data.everyMonthPayment)
     data.totalSummPayment = setGoodNumber(data.totalSummPayment)
+
 
     setResult(data)
   }
@@ -75,6 +76,7 @@ function Calculator(props) {
   function parseInput(str){
     str = str.split(',')
     str = str.join('')
+    console.log(str);
     return str
   }
 
