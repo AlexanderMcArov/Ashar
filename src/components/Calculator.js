@@ -16,7 +16,6 @@ function Calculator(props) {
   })
 
   function setGoodNumber(number) {
-    console.log('NUMBER:',number);
     let float = parseFloat(number) - parseInt(number) + ' '
     float.split(' ')
     let res = []
@@ -35,7 +34,7 @@ function Calculator(props) {
     res = res.reverse().join('')
     resf = resf.join('')
     res += resf
-    console.log('GOOGNUMBER',res);
+
     return res
   }
 
@@ -57,26 +56,29 @@ function Calculator(props) {
     data.everyMonthPayment = setGoodNumber(data.everyMonthPayment)
     data.totalSummPayment = setGoodNumber(data.totalSummPayment)
 
-
     setResult(data)
   }
 
   function setNiceInput(string) {
+      if(string.length < 1) return ''
+      string = string.split('')
+      string.forEach((item,i)=>{
+        if(!parseInt(item)) string.splice(i,1)
+      })
+    
     let res = []
-    string = string.split('').reverse()
+    string = string.reverse()
     for (let i = 0; i < string.length; i++) {
       if (i > 2 && i % 3 == 0) res.push(',')
       res.push(string[i])
     }
     res = res.reverse().join('')
-    console.log(res);
     return res
   }
 
   function parseInput(str){
     str = str.split(',')
     str = str.join('')
-    console.log(str);
     return str
   }
 
